@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"os"
+	"path"
 	"strconv"
 )
 
@@ -15,7 +17,9 @@ func init() {
 		//CityMap["深州"] = 131182
 		//CityMap["广州"] = 440100
 		//CityMap["开化"] = 330824
-	err := ReadJson("D:\\gowork\\go-cli\\tools\\行政区划与名称.json")
+	ePath,_:=os.Getwd()
+	fmt.Println(ePath)
+	err := ReadJson(path.Join(ePath,"行政区划与名称.json"))
 	if err != nil {
 		fmt.Println(err)
 	}
