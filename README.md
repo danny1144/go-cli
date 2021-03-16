@@ -9,5 +9,5 @@
 
 ````
 根据城市代码  go run main.go weather -c 330100
-根据城市名称  go run main.go weather -n 杭州 
+根据城市名称  go run main.go weather -n 杭州市
 ````

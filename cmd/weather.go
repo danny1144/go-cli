@@ -51,7 +51,7 @@ to quickly create a Cobra application.`,
 
 	},
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("weather called")
+
 		code, _ := cmd.Flags().GetInt("code")
 
 		if code > 0 {
